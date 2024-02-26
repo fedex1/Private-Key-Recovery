@@ -6,13 +6,14 @@ class Progress {
   }
 
   static clear () {
-    process.stdout.clearLine()
-    process.stdout.cursorTo(0)
+    // process.stdout.clearLine()
+    // process.stdout.cursorTo(0)
   }
 
   print () {
     this.constructor.clear()
-    process.stdout.write('Progress: ' + this.percent + '%')
+    // process.stdout.write('Progress: ' + this.percent + '%')
+    console.log('Progress: ' + this.percent + '%')
   }
 
   update () {
